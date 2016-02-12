@@ -45,9 +45,11 @@ public class Visitor : MonoBehaviour {
 
 		// VR mode.
 		if (King.isInVRMode) {
-			regularCameraRig.gameObject.SetActive(false);
+            print("Setting VR sight");
 
             /*
+			regularCameraRig.gameObject.SetActive(false);
+
 			if (!vrCameraRig.gameObject.activeSelf)
 				vrCameraRig.gameObject.SetActive(true);
 			
@@ -55,10 +57,16 @@ public class Visitor : MonoBehaviour {
 			//cameras.Add(vrCameraRig.GetComponent<OVRCameraRig>().leftEyeCamera);
 			//cameras.Add(vrCameraRig.GetComponent<OVRCameraRig>().rightEyeCamera);
             */
-		} 
-		// Regular mode.
-		else {
-			regularCameraRig.gameObject.SetActive(true);
+            regularCameraRig.gameObject.SetActive(true);
+            //vrCameraRig.gameObject.SetActive(false);
+
+            sight.anchor = regularCenterOfView;
+            cameras.Add(regularCameraRig.GetComponentInChildren<Camera>());
+        }
+        // Regular mode.
+        else {
+            print("Setting regular sight");
+            regularCameraRig.gameObject.SetActive(true);
 			//vrCameraRig.gameObject.SetActive(false);
 			
 			sight.anchor = regularCenterOfView;

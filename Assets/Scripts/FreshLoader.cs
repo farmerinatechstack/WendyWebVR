@@ -28,16 +28,12 @@ public class FreshLoader : MonoBehaviour {
 		if (!cameraRig.activeSelf)
 			cameraRig.SetActive(true);
 
-        print("Setting camera to be active");
-
 		yield return new WaitForSeconds(0.5f);
 
 		AudioListener.volume = 1f;
 
 		var prevLoadingPriority = Application.backgroundLoadingPriority;
 		Application.backgroundLoadingPriority = ThreadPriority.High;
-
-        print("Loading level: " + sceneName);
         Application.LoadLevel(sceneName);
 		
 		Application.backgroundLoadingPriority = prevLoadingPriority;
