@@ -68,7 +68,7 @@ public class Sight : MonoBehaviour {
 	}
 
 	void UpdateHitInfo() {
-        print("UpdateHitInfo setting facingVector. Anchor: " + anchor);
+        //print("UpdateHitInfo setting facingVector. Anchor: " + anchor);
         facingVector = anchor.TransformDirection(Vector3.forward);
 		Physics.Raycast(anchor.position, facingVector, out hitInfo, 500f, layerMask);
 	}
@@ -111,7 +111,7 @@ public class Sight : MonoBehaviour {
 	}
 
 	Vector3 GetClosestPointOnBoundsToFocusPoint(Component target) {
-        print("GetClosestPointOnBoundsToFocusPoint accessing anchor position. Anchor " + anchor);
+        //print("GetClosestPointOnBoundsToFocusPoint accessing anchor position. Anchor " + anchor);
         var anchorPosition = anchor.position;
 
         var relativePointAtDistance = hitInfo.collider != null ? hitInfo.point : target.transform.position;

@@ -45,8 +45,6 @@ public class Visitor : MonoBehaviour {
 
 		// VR mode.
 		if (King.isInVRMode) {
-            print("Setting VR sight");
-
             /*
 			regularCameraRig.gameObject.SetActive(false);
 
@@ -65,7 +63,6 @@ public class Visitor : MonoBehaviour {
         }
         // Regular mode.
         else {
-            print("Setting regular sight");
             regularCameraRig.gameObject.SetActive(true);
 			//vrCameraRig.gameObject.SetActive(false);
 			
@@ -390,7 +387,7 @@ public class Visitor : MonoBehaviour {
 	}
 
 	public void Take(ObtainableItem item) {
-		Debug.Log("Visitor takes "+item);
+		//Debug.Log("Visitor takes "+item);
 		itemInHand = item;
 		item.Obtains();
 		sight.ResetTarget();
@@ -402,7 +399,7 @@ public class Visitor : MonoBehaviour {
 	}
 
 	public void Drop(ObtainableItem item) {
-		Debug.Log("Visitor drops "+item);
+		//Debug.Log("Visitor drops "+item);
 		itemInHand.Frees();
 		itemInHand = null;
 		sight.ResetTarget();

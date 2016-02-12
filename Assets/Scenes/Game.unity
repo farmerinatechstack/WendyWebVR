@@ -488,8 +488,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89dba7bb8ec54e73ae44b1fa1f4e3c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vrCameraRig: {fileID: 0}
-  vrCenterOfView: {fileID: 0}
   regularCameraRig: {fileID: 486498011}
   regularCenterOfView: {fileID: 842932541}
   sight: {fileID: 0}
@@ -497,7 +495,6 @@ MonoBehaviour:
   defaultDistanceToFloatingObject: 0.75
   defaultFocusTimeSec: 0.8
   waistAnchor: {fileID: 1940361101}
-  faceAnchor: {fileID: 0}
   earsAnchor: {fileID: 587937641}
   localPositionAtPrevLobby: {x: 0, y: 0, z: 0}
   screenFader: {fileID: 438740855}
@@ -1849,6 +1846,42 @@ Prefab:
     - target: {fileID: 473050, guid: 36c409c904d3a6d4f9ea8259fcdc9f6e, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060392, guid: 36c409c904d3a6d4f9ea8259fcdc9f6e, type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060392, guid: 36c409c904d3a6d4f9ea8259fcdc9f6e, type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060392, guid: 36c409c904d3a6d4f9ea8259fcdc9f6e, type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028770, guid: 36c409c904d3a6d4f9ea8259fcdc9f6e, type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028770, guid: 36c409c904d3a6d4f9ea8259fcdc9f6e, type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028770, guid: 36c409c904d3a6d4f9ea8259fcdc9f6e, type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036768, guid: 36c409c904d3a6d4f9ea8259fcdc9f6e, type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036768, guid: 36c409c904d3a6d4f9ea8259fcdc9f6e, type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036768, guid: 36c409c904d3a6d4f9ea8259fcdc9f6e, type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 36c409c904d3a6d4f9ea8259fcdc9f6e, type: 2}
