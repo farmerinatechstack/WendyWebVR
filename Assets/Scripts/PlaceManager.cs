@@ -219,7 +219,4 @@ public class PlaceManager : MonoBehaviour {
 		currentPlace = targetPlace;
 		SetSettingsForPlace(targetPlace);
 	}
-
-
-
 }

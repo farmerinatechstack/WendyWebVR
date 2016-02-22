@@ -36,6 +36,11 @@ public class StereoCamera : MonoBehaviour {
         changeMode("normal");
 
         Application.ExternalCall("getVRDevices");
+
+        #if WEB_GL
+        print("detected WebGL, setting main loop")
+        emscripten_set_main_loop(0, false);
+        #endif
     }
 
     // Update is called once per frame

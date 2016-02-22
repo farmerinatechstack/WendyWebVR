@@ -55,7 +55,7 @@ public class King : SingletonComponent<King> {
 		DontDestroyOnLoad(gameObject);
 		visitor = (Visitor) FindObjectOfType<Visitor>();
 		placeManager = GetComponent<PlaceManager>();
-		Application.targetFrameRate = 60;
+		//Application.targetFrameRate = 60;
 
 
 		if (visitor == null) {
